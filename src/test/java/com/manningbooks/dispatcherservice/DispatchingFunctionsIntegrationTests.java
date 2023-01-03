@@ -1,5 +1,6 @@
 package com.manningbooks.dispatcherservice;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.function.context.FunctionCatalog;
@@ -13,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @FunctionalSpringBootTest
+@Disabled("These tests are only necessary when using the functions alone (no bindings)")
 class DispatchingFunctionsIntegrationTests {
 
     @Autowired
